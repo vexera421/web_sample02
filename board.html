@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Techmall | 전자제품 쇼핑몰</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">🛒TechMall</a>
+        </div>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="#">상품목록</a>
+            <a href="board.html">공지사항</a>
+            <a href="#">고객센터</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#">🔍</a>
+            <a href="#">📌</a>
+            <a href="#">🔥</a>
+
+        </div>
+    </header>
+
+    <main>
+        <!--공지사항 제목 배너-->
+        <section class="page-title">
+            <h1>공지사항</h1>
+            <p>TechMall의 새로운 소식을 확인하세요.</p>
+
+        </section>
+        <!--게시판 리스트 테이블-->
+        <section class="content board-content">
+            <div class="board-search">
+                <select>
+                    <option>제목</option>
+                    <option>전체</option>
+                    <option>내용</option>
+                </select>
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button class="button">검색</button>
+                <a href="write.html" class="button green-button push-right">글쓰기</a>
+            </div>
+            <table class="board-table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                        <th>조회수</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td class="subject"><a href="view.html">연휴 배송 안내</a> </td>
+                        <td>관리자</td>
+                        <td>2025.09.25</td>
+                        <td>12</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="subject"><a href="view.html">신규 회원 가입 이벤트 안내</a> </td>
+                        <td>관리자</td>
+                        <td>2025.09.20</td>
+                        <td>1525</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="subject"><a href="view.html">일부 상품 가격 인상 안내</a> </td>
+                        <td>관리자</td>
+                        <td>2025.09.15</td>
+                        <td>535</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="subject"><a href="view.html">고객센터 운영 시간 변경 안내</a> </td>
+                        <td>관리자</td>
+                        <td>2025.09.05</td>
+                        <td>124</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="subject"><a href="view.html">9월 추천 상품 안내</a> </td>
+                        <td>관리자</td>
+                        <td>2025.09.01</td>
+                        <td>531</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="subject"><a href="view.html">카드 무이자 할부 이벤트 안내</a> </td>
+                        <td>관리자</td>
+                        <td>2025.08.25</td>
+                        <td>1245</td>
+                        
+                    </tr>
+                </tbody>
+
+
+            </table>
+                <div class="pagination">
+                    <a href="#">◁</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">▷</a>
+                </div>
+        </section>
+    </main>
+    
+    <footer>
+        <strong>🛒TechMall</strong>
+        <p>서울특별시 강남구 테크로 123 | 고객센터 | 1588-1234 | help@tecjmall.co.kr</p>
+        <small>ⓒ 2025 TechMall. All right reserved.</small>
+    </footer>
+</body>
+</html>

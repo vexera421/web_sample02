@@ -101,7 +101,7 @@ nav a:hover {
     border: 0;
     border-radius: 5px;
     font-size: 13px;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .button:hover {
@@ -284,6 +284,161 @@ footer p {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+/* 게시판 목록 디자인 */
+
+/* 게시판 페이지 배너 디자인 */
+
+.page-title {
+    background-color: #eaf5ff;
+    padding: 25px 8%;
+
+}
+
+.page-title h1 {
+    color: #103e69;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+}
+.page-title p {
+    color: #5c7286;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 게시판 검색 도구 디자인 */
+.board-search {
+    display: flex;
+    gap: 8px;
+    align-self: center;
+    margin-bottom: 15px;
+
+
+}
+
+.board-search select {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.board-search input {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    background-color: white;
+    width: 250px;
+}
+.push-right {
+    margin-left: auto;
+}
+/* 게시판 목록 테이블 디자인 */
+.board-table {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    border-collapse: collapse; /* 열과 열 사이의 줄 없애기 */
+
+}
+
+.board-table th { /*제목줄 */
+
+    padding: 13px 7px;
+    background-color: #f0f7fc;
+    color: #304e68;
+
+
+}
+
+.board-table td {
+    padding: 13px 7px;
+    border-bottom: 1px solid #dce7ef;
+
+}
+
+.board-table .subject {
+    text-align: left;
+}
+.board-table .subject a:hover {
+    color: #0879d1;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* 페이지 넘버 디자인 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+
+}
+
+.pagination a {
+    border: 1px solid #dce7ef;
+    border-radius: 4px;
+    padding: 5px 10px;
+
+}
+.pagination .active {
+    background-color: #0879d1;
+    color: white;
+}
+
+.article-content h2 {
+    border-bottom: 1px solid #dce7ef;
+    padding: 15px;
+
+}
+
+.article-info {
+     display: flex;
+    gap: 20px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    color: #718493;
+    font-size: 13px;
+    border-bottom: 1px solid #dce8ef;
+}
+
+.article-content {
+    padding: 20px;
+    min-height: 250px;
+}
+.article-content h3 {
+    color: #075b91;
+
+}
+
+.article-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+.prev-next p {
+    border: 1px solid #dce8ef;
+    padding: 8px;
+}
+
+.prev-next b {
+    color: #075b91;
+}
+.prev-next a {
+    margin-left: 10px;
+    
+    
+}
+.prev-next a:hover {
+    color: #075b91;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
 
 /* 모바일 화면에서 보기 좋게 배치(700미만 화면) */
 
