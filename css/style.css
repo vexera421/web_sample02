@@ -1,0 +1,286 @@
+/* 모든 페이지 공통 스타일 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "맑은 고딕", sans-serif;
+    background-color: white;
+    color: #263f56;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header 디자인 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 6%;
+    gap: 20px;
+    background-color: white;
+    border-bottom: 1px solid #dce7ef;
+}
+
+.logo {
+    font-size: 22px;
+    color: #075b9b;
+    font-weight: bold;    
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #304e68;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    color: #0879d1;
+}
+
+.header-icons {
+    display: flex;
+    gap: 13px;
+    font-size: 20px;
+}
+
+/* 메인 배너 디자인 */
+.banner {
+    min-height: 300px;
+    padding: 35px 8%;
+    background-color: #eaf5ff;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+}
+
+.banner .small-title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0879d1;
+
+}
+
+.banner h1 {
+    font-size: 34px;
+    color: #103e69;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.banner h1 span {
+    color: #0879d1;
+}
+
+.banner p {
+    color: #5c7286;
+}
+
+.banner img {
+    width: 40%;
+    height: 230px;
+    object-fit: cover;
+    /* 가로 세로 비율 유지, 부모 박스의 가로, 세로 크기에 맞춰서 이미지가 확대, 축소 */
+    /* 지정 크기보다 큰 부분은 잘려나감 */
+    border-radius: 8px;
+}
+
+/* 공통 버튼 디자인 */
+.button {
+    display: inline-block;
+    background-color: #0879d1;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: #075b9b;
+}
+
+/* green, gray, red 버튼 디자인 */
+.green-button {
+    background-color: #159765;
+}
+
+.gray-button {
+    background-color: #718493;
+}
+
+.red-button {
+    background-color: #e34d59;
+}
+
+
+/* content 공통 속성 */
+.content {
+    max-width: 1100px;
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 30px 20px;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 21px;
+    color: #103e69;
+}
+
+.section-head a {
+    color: #0879d1;
+    font-size: 13px;
+}
+
+/* 상품 카드 리스트 디자인 */
+.product-list {
+    display: flex;
+    gap: 15px;
+}
+
+.product-card {
+    flex: 1;
+    border: 1px solid #dce7ef;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.product-card img {
+    display: block;   
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #edf5fa;
+}
+
+.product-info {
+    padding: 12px;
+}
+
+.product-info h3 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.product-info .price {
+    font-weight: bold;
+    color: #075b9b;
+    margin-top: 5px;
+}
+
+/* 서비스 리스트 디자인 */
+.service-list {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    background-color: #f0f7fc;
+    border-radius: 6px;
+
+}
+
+.service-list div {
+    flex: 1;
+    text-align: center;
+}
+
+.service-list span {
+    display: block;
+    font-size: 25px;
+}
+
+.service-list b {
+    color: #075b9b;
+}
+
+.service-list p {
+    font-size: 12px;
+    color: #687d8e;
+    margin-top: 3px;
+}
+
+/* 공지사항과 브랜드 */
+.bottom-content {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom-content div {
+    flex: 1;    
+}
+
+.notice-list {
+    list-style: none;
+    padding: 0; /* 리스트에서 말머리 기호 때문에 잡혀있는 패딩 여백 영역 제거 */    
+    border-top: 1px solid #dce7ef;
+}
+
+.notice-list li {
+    /* border-top: 1px solid #dce7ef; */
+    /* 선이 겹치는 부분이 발생하여 선이 굵게 보이는 버그 발생 */
+    border-bottom: 1px solid #dce7ef ;
+    padding: 10px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-list span {
+    font-size: 12px;
+    color: #718493;
+}
+
+.brand-list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap; /* 공간이 부족하면 자동 줄 바꿈 */
+}
+
+.brand-list span {
+    width: 32%;
+    box-sizing: border-box;
+    border: 1px solid #dce7ef;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #425a70;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+/* 공통 footer 영역 디자인 */
+
+footer {
+    text-align: center;
+    background-color: #123f67;
+    color: white;
+    padding: 25px 15px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+footer small {
+    color: #c8d9e7;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
