@@ -391,52 +391,88 @@ footer p {
 
 .article-content h2 {
     border-bottom: 1px solid #dce7ef;
-    padding: 15px;
-
+    padding-bottom: 15px;
 }
 
 .article-info {
-     display: flex;
+    display: flex;
     gap: 20px;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    color: #718493;
     font-size: 13px;
-    border-bottom: 1px solid #dce8ef;
+    color: #718493;
+    padding: 12px 0;
+    border-bottom: 1px solid #dce7ef;
 }
 
-.article-content {
-    padding: 20px;
-    min-height: 250px;
+.article-body {
+    padding: 25px 5px;
+    min-height: 250px; /* 늘어날 가능성이 있음 */
 }
-.article-content h3 {
-    color: #075b91;
 
+.article-body h3 {
+    color: #075b9b;
 }
 
 .article-buttons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* 가로 오른쪽 정렬 */
     gap: 8px;
 }
+
+.prev-next {
+    padding-top: 0; 
+}
+
 .prev-next p {
-    border: 1px solid #dce8ef;
-    padding: 8px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #dce7ef;
+    padding: 10px;
 }
 
 .prev-next b {
-    color: #075b91;
+    color: #075b9b;
 }
-.prev-next a {
-    margin-left: 10px;
-    
-    
+
+/* 글쓰기 폼 디자인 */
+.form-content {
+    max-width: 850px;
+    /* border: 1px solid red; */
 }
-.prev-next a:hover {
-    color: #075b91;
-    text-decoration: underline;
+
+.form-content label {
+    display: block;
     font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
+
+.form-content input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-content textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe7;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    resize: vertical; /* 사용자가 세로 방향으로만 입력창 확장 */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+
 
 
 
